@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>Arkademy</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <div class="col">
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" width="70" height="30" alt="">
+          </a>
+        </div>
+        <form class="col-10">
+          <div class="row">
+            <div class="col-10 mr-4">  
+              <input type="search" class="form-control" name="search" placeholder="Search...">      
+            </div>
+            <div class="col">
+              <a class="btn btn-warning" data-toggle="modal" data-target="#addModal">ADD</a>  
+            </div>   
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container mt-3">
+      <div class="row justify-content-center">
+        <table class="table border" style="text-align: center">
+          <thead>
+            <tr class="bg-warning">
+              <th scope="col">No</th>
+              <th scope="col">Cashier</th>
+              <th scope="col">Product</th>
+              <th scope="col">Category</th>
+              <th scope="col">Price</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Pevita Pearce</td>
+              <td>Latte</td>
+              <td>Drink</td>
+              <td>Rp. 10.000</td>
+              <td>
+                <a data-toggle="modal" data-target="#editModal"><span style="color: green" class="fa fa-edit fa-lg mr-2"></span></a> 
+                <a data-toggle="modal" data-target="#deleteModal"><span style="color: red" class="fa fa-trash fa-lg mr-2"></span></a>   
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Raisa Andriana</td>
+              <td>Cake</td>
+              <td>Food</td>
+              <td>Rp. 15.000</td>
+              <td>
+                <a data-toggle="modal" data-target="#editModal"><span style="color: green" class="fa fa-edit fa-lg mr-2"></span></a> 
+                <a data-toggle="modal" data-target="#deleteModal"><span style="color: red" class="fa fa-trash fa-lg mr-2"></span></a>        
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Raisa Andriana</td>
+              <td>Fried Rice</td>
+              <td>Food</td>
+              <td>Rp. 30.000</td>
+              <td>
+                <a data-toggle="modal" data-target="#editModal"><span style="color: green" class="fa fa-edit fa-lg mr-2"></span></a> 
+                <a data-toggle="modal" data-target="#deleteModal"><span style="color: red" class="fa fa-trash fa-lg mr-2"></span></a>   
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade container" id="addModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">ADD</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container row justify-content-center align-center">
+              <div class="col-10">
+                <form>
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>Raisa Andriani</option>
+                      <option>Pevita Pearce</option>
+                      <option>Sipky Jaya</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>Drink</option>
+                      <option>Food</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="" value="Ice Tea">
+                  </div>
+
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="" value="Rp. 10.000">
+                  </div>
+
+                  <div class="form-group">
+                    <button type="button" class="btn btn-warning float-right">EDIT</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade container" id="editModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">EDIT</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container row justify-content-center align-center">
+              <div class="col-10">
+                <form>
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>Raisa Andriani</option>
+                      <option>Pevita Pearce</option>
+                      <option>Sipky Jaya</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>Drink</option>
+                      <option>Food</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="" value="Ice Tea">
+                  </div>
+
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="" value="Rp. 10.000">
+                  </div>
+
+                  <div class="form-group">
+                    <button type="button" class="btn btn-warning float-right">EDIT</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>           
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade container" id="deleteModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="container row justify-content-center align-center">
+              <div class="col-10 mt-5 mb-5">
+                <h4 style="text-align: center">Data Raisa Andriani ID #1</h4>
+                <p style="font-size: 150px; color: green; text-align: center" class="col-12"><i class="fa fa-check-circle fa-lg float-center"></i></p>
+                <h4 style="text-align: center">Berhasil Dihapus!</h4><br>
+              </div>
+            </div>           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
