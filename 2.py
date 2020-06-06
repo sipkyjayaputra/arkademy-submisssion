@@ -4,8 +4,8 @@ def cetak(panjang):
     print('Panjang harus bernilai ganjil')
   else :
     print('---\t\tpanjang\t\t---')
-    for i in range(0, 5):
-      if(i==2):
+    for i in range(0, panjang):
+      if(i == int(panjang/2)):
         print('+\t+\t+\t+\t+')
       else:
         print('+\t=\t=\t=\t+')
