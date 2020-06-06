@@ -5,10 +5,16 @@ def cetak(panjang):
   else :
     print('---\t\tpanjang\t\t---')
     for i in range(0, panjang):
+      print('\n')
       if(i == int(panjang/2)):
-        print('+\t+\t+\t+\t+')
+        for i in range(0, panjang):
+          print('+\t', end='')
       else:
-        print('+\t=\t=\t=\t+')
+        for i in range(0, panjang):
+          if(i==0 or i==(panjang-1)):
+            print('+\t', end='')
+          else:
+            print('=\t', end='')
 
   
 print('masukkan panjang: ', end='')
